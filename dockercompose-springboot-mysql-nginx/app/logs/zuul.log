@@ -1,0 +1,47 @@
+2019-01-11 17:15:13.392 - INFO  [           main] c.h.Application                : DockerCompose启动主
+2019-01-11 17:15:13.642 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting Application on hourz with PID 18104 (F:\Documents\Spring-boot\dockercompose-springboot-mysql-nginx\app\target\classes started by hourz in F:\Documents\Spring-boot\dockercompose-springboot-mysql-nginx\app)
+2019-01-11 17:15:13.642 - INFO  [           main] o.s.b.SpringApplication        : The following profiles are active: dev
+2019-01-11 17:15:13.673 - INFO  [           main] c.s.AbstractApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18230356: startup date [Fri Jan 11 17:15:13 CST 2019]; root of context hierarchy
+2019-01-11 17:15:14.337 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$64be9294] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-11 17:15:14.545 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2019-01-11 17:15:14.545 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-11 17:15:14.560 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-01-11 17:15:14.560 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/8.5.29
+2019-01-11 17:15:14.560 - INFO  [ost-startStop-1] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_144\jre\bin;E:\app\hourz\product\11.2.0\dbhome_1\bin;D:\app\hourz\product\11.2.0\dbhome_1\bin;D:\app\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"C:\Program Files\Java\jdk1.8.0_144\jre\Bin;C:\Program Files\Java\jdk1.8.0_144\Bin";D:\Maven\apache-maven-3.5.3\bin;D:\Program Files\Git\cmd;D:\Program Files\erl8.3\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\hourz\AppData\Local\Microsoft\WindowsApps;C:\Users\hourz\AppData\Roaming\npm;D:\Program Files\Microsoft VS Code\bin;.]
+2019-01-11 17:15:14.638 - INFO  [ost-startStop-1] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-01-11 17:15:14.638 - INFO  [ost-startStop-1] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 965 ms
+2019-01-11 17:15:14.748 - INFO  [ost-startStop-1] .b.w.s.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2019-01-11 17:15:14.757 - INFO  [ost-startStop-1] AbstractFilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-11 17:15:14.757 - INFO  [ost-startStop-1] AbstractFilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-11 17:15:14.757 - INFO  [ost-startStop-1] AbstractFilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-11 17:15:14.757 - INFO  [ost-startStop-1] AbstractFilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-11 17:15:14.867 - INFO  [           main] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2019-01-11 17:15:15.038 - INFO  [           main] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2019-01-11 17:15:15.070 - INFO  [           main] tainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-11 17:15:15.132 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2019-01-11 17:15:15.132 - INFO  [           main] o.h.c.Environment              : HHH000206: hibernate.properties not found
+2019-01-11 17:15:15.163 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-11 17:15:15.257 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-01-11 17:15:15.593 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-11 17:15:15.874 - INFO  [           main] .s.h.AbstractUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-11 17:15:16.092 - INFO  [           main] a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18230356: startup date [Fri Jan 11 17:15:13 CST 2019]; root of context hierarchy
+2019-01-11 17:15:16.107 - WARN  [           main] uration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-11 17:15:16.144 - INFO  [           main] rMethodMapping$MappingRegistry : Mapped "{[/]}" onto public java.lang.String com.hourz.controller.VisitorController.index(javax.servlet.http.HttpServletRequest)
+2019-01-11 17:15:16.147 - INFO  [           main] rMethodMapping$MappingRegistry : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-11 17:15:16.147 - INFO  [           main] rMethodMapping$MappingRegistry : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-11 17:15:16.163 - INFO  [           main] .s.h.AbstractUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-11 17:15:16.163 - INFO  [           main] .s.h.AbstractUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-11 17:15:16.372 - INFO  [           main] o.s.j.e.MBeanExporter          : Registering beans for JMX exposure on startup
+2019-01-11 17:15:16.373 - INFO  [           main] o.s.j.e.MBeanExporter          : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-11 17:15:16.377 - INFO  [           main] o.s.j.e.MBeanExporter          : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-01-11 17:15:16.388 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2019-01-11 17:15:16.395 - INFO  [           main] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-01-11 17:15:16.404 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-11 17:15:16.404 - INFO  [           main] o.s.b.StartupInfoLogger        : Started Application in 2.966 seconds (JVM running for 3.771)
+2019-01-11 17:16:36.632 - INFO  [on(7)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-01-11 17:16:36.638 - INFO  [on(7)-127.0.0.1] c.s.AbstractApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18230356: startup date [Fri Jan 11 17:15:13 CST 2019]; root of context hierarchy
+2019-01-11 17:16:36.639 - INFO  [on(7)-127.0.0.1] o.s.j.e.MBeanExporter          : Unregistering JMX-exposed beans on shutdown
+2019-01-11 17:16:36.640 - INFO  [on(7)-127.0.0.1] s.j.s.MBeanRegistrationSupport : Unregistering JMX-exposed beans
+2019-01-11 17:16:36.640 - INFO  [on(7)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-11 17:16:36.640 - INFO  [on(7)-127.0.0.1] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown initiated...
+2019-01-11 17:16:36.640 - INFO  [on(7)-127.0.0.1] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown completed.

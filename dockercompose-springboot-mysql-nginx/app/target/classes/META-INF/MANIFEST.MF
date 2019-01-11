@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: hourz
+Build-Jdk: 10.0.1
+Implementation-Title: dockercompose-springboot-mysql-nginx
+Implementation-Version: 1.0
+Implementation-Vendor-Id: com.hourz
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/dockercompose-springboot-mysql-nginx
+Created-By: Maven Integration for Eclipse
+

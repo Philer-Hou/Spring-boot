@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>spring-boot-admin-client</artifactId>
+	<packaging>jar</packaging>
+	<!--Spring Boot Parent Depend -->
+	<parent>
+		<groupId>com.hourz</groupId>
+		<artifactId>spring-boot-admin-simple</artifactId>
+		<version>1.0.0.BUILD-SNAPSHOT</version>
+	</parent>
+	<!-- Depend Maven JAR Settings -->
+	<dependencies>
+		<!-- Spring Boot Start Depend -->
+		<dependency>
+		  	<groupId>org.springframework.boot</groupId>
+		  	<artifactId>spring-boot-starter</artifactId>
+		  	<!-- Remove Spring Boot Logging Of Logback -->
+		  	<exclusions>
+		        <exclusion>
+		            <groupId>org.springframework.boot</groupId>
+		            <artifactId>spring-boot-starter-logging</artifactId>
+		        </exclusion>
+	    	</exclusions>
+		</dependency>
+		<!-- Spring Boot log4j2 Depend -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-log4j2</artifactId>
+		</dependency>
+		<!-- Log4j2 Style Jackson Databind Depend -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>  
+			<artifactId>jackson-databind</artifactId>  
+		</dependency>
+		<!-- Log4j2 Style Jackson Dataformat Yaml Depend -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>  
+			<artifactId>jackson-dataformat-yaml</artifactId>  
+		</dependency>
+		<!-- Spring Boot Admin Starter Client Depend -->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-client</artifactId>
+			<version>1.5.6</version>
+		</dependency>
+	</dependencies>
+	<!-- Depend Maven Build Settings -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
