@@ -1,4 +1,4 @@
-package com.neo;
+package com.hourz;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,11 +8,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ComposeApplicationTests {
+public class ApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		System.out.println("Hello Spring Boot Docker Compose!");
+		System.out.println("hello word");
 	}
 
 }
