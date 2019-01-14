@@ -1,4 +1,4 @@
-package com.neo.runner;
+package com.hourz.runner;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
