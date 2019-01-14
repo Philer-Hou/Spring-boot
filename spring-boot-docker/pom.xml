@@ -51,10 +51,12 @@
 			<groupId>com.fasterxml.jackson.dataformat</groupId>  
 			<artifactId>jackson-dataformat-yaml</artifactId>  
 		</dependency>
-	     <dependency>
+		<!-- Spring Boot Start Web Depend -->
+	    <dependency>
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-starter-web</artifactId>
 	    </dependency>
+	    <!-- Spring Boot Start test Depend -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
