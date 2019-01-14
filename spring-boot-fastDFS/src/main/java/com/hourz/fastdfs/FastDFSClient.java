@@ -1,25 +1,41 @@
-package com.neo.fastdfs;
+package com.hourz.fastdfs;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.csource.common.NameValuePair;
 import org.csource.fastdfs.*;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
+import com.hourz.Application;
+
 import java.io.*;
 
+/**
+ * <p>文件服务器客户端</p>
+ * @author hourz
+ * @since 2019-01-14
+ */
 public class FastDFSClient {
-	private static org.slf4j.Logger logger = LoggerFactory.getLogger(FastDFSClient.class);
-
+	private static final Logger logger = LogManager.getLogger(Application.class);
+	
 	static {
 		try {
-			String filePath = new ClassPathResource("fdfs_client.conf").getFile().getAbsolutePath();;
+			// 静态加载配置文件
+			String filePath = new ClassPathResource("fdfs_client.conf").getFile().getAbsolutePath();
+			// 连接文件服务器
 			ClientGlobal.init(filePath);
 		} catch (Exception e) {
 			logger.error("FastDFS Client Init Fail!",e);
 		}
 	}
 
+	/**
+	 * <p>上传文件</p>
+	 * @param file
+	 * @return
+	 */
 	public static String[] upload(FastDFSFile file) {
 		logger.info("File Name: " + file.getName() + "File Length:" + file.getContent().length);
 
@@ -49,6 +65,12 @@ public class FastDFSClient {
 		return uploadResults;
 	}
 
+	/**
+	 * <p>获取文件</p>
+	 * @param groupName
+	 * @param remoteFileName
+	 * @return
+	 */
 	public static FileInfo getFile(String groupName, String remoteFileName) {
 		try {
 			StorageClient storageClient = getTrackerClient();
@@ -61,6 +83,12 @@ public class FastDFSClient {
 		return null;
 	}
 
+	/**
+	 * <p>下载文件</P>
+	 * @param groupName
+	 * @param remoteFileName
+	 * @return
+	 */
 	public static InputStream downFile(String groupName, String remoteFileName) {
 		try {
 			StorageClient storageClient = getTrackerClient();
@@ -75,6 +103,12 @@ public class FastDFSClient {
 		return null;
 	}
 
+	/**
+	 * <p>删除文件</P>
+	 * @param groupName
+	 * @param remoteFileName
+	 * @return
+	 */
 	public static void deleteFile(String groupName, String remoteFileName)
 			throws Exception {
 		StorageClient storageClient = getTrackerClient();

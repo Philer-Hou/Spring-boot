@@ -63,7 +63,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+	<!-- Depend Maven JAR Settings -->
 	<build>
 		<plugins>
 			<plugin>

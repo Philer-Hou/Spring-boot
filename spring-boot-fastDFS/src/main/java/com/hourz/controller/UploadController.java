@@ -1,7 +1,8 @@
-package com.neo.controller;
+package com.hourz.controller;
 
-import com.neo.fastdfs.FastDFSClient;
-import com.neo.fastdfs.FastDFSFile;
+import java.io.IOException;
+import java.io.InputStream;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -11,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import java.io.IOException;
-import java.io.InputStream;
+import com.hourz.fastdfs.FastDFSClient;
+import com.hourz.fastdfs.FastDFSFile;
 
 @Controller
 public class UploadController {

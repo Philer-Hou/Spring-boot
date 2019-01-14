@@ -4,42 +4,74 @@
   http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.neo</groupId>
+    <groupId>com.hourz</groupId>
     <artifactId>spring-boot-fastDFS</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
-
+	<!-- Spring Boot Parent Depend -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.9.RELEASE</version>
     </parent>
-
+	<!-- Source Encoding & Report Encoding & JDK Verson Settings -->
     <properties>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
     </properties>
-
+	<!-- Depend Maven JAR Settings -->
     <dependencies>
+    	<!-- Spring Boot Start Depend -->
+		<dependency>
+		  	<groupId>org.springframework.boot</groupId>
+		  	<artifactId>spring-boot-starter</artifactId>
+		  	<!-- Remove Spring Boot Logging Of Logback -->
+		  	<exclusions>
+		        <exclusion>
+		            <groupId>org.springframework.boot</groupId>
+		            <artifactId>spring-boot-starter-logging</artifactId>
+		        </exclusion>
+	    	</exclusions>
+		</dependency>
+		<!-- Spring Boot log4j2 Depend -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-log4j2</artifactId>
+		</dependency>
+		<!-- Log4j2 Style Jackson Databind Depend -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>  
+			<artifactId>jackson-databind</artifactId>  
+		</dependency>
+		<!-- Log4j2 Style Jackson Dataformat Yaml Depend -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>  
+			<artifactId>jackson-dataformat-yaml</artifactId>  
+		</dependency>
+		<!-- Spring Boot Start Web Depend -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- Spring Boot Start Thymeleaf Depend -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
+        <!-- Spring Boot Start Devtools Depend -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
+        <!-- Fastdfs Client Depend -->
         <dependency>
 		    <groupId>cn.bestwu</groupId>
 		    <artifactId>fastdfs-client-java</artifactId>
 		    <version>1.27</version>
 		</dependency>
     </dependencies>
-
+	<!-- Depend Maven JAR Settings -->
     <build>
         <plugins>
             <plugin>
